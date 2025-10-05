@@ -5,6 +5,6 @@ ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY ${DEPENDENCY}/META-INF /app/META-INF
 COPY ${DEPENDENCY}/BOOT-INF/classes /app
-COPY 02030712460012.crt /app
+COPY 03151402771045.crt /app
 #COPY 05010211191019.crt /app
 ENTRYPOINT ["java","-cp","app:app/lib/*","sv.mh.fe.Application"]
